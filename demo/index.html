@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>PhishGuard Demo — Simulation Only</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="banner">
+    <strong>PhishGuard Demo — Simulation Only</strong>
+    <small>(No real credentials are captured — educational use)</small>
+  </div>
+
+  <main class="card">
+    <h1>Sign in</h1>
+    <form id="loginForm">
+      <label>
+        Email
+        <input id="email" type="email" required placeholder="you@example.com"/>
+      </label>
+      <label>
+        Password
+        <input id="password" type="password" required placeholder="Enter password"/>
+      </label>
+      <button type="submit">Sign in</button>
+      <p class="note">After submit, the page will show how attackers see signals. No password leaves this page.</p>
+    </form>
+
+    <div id="result" class="hidden"></div>
+  </main>
+
+  <script src="demo.js"></script>
+</body>
+</html>
